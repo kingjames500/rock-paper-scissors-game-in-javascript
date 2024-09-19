@@ -1,0 +1,90 @@
+@import "https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: sans-serif;
+    font-size: 1.6rem;
+    font-family: "Press Start 2P", sans-serif;
+}
+
+.container{
+    background-color: #9ec81f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 50vw;
+    margin: 0 auto;
+    position: relative;
+}
+
+.main-area{
+    width: 100%;
+}
+
+.game-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    padding: 1rem;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.copyright, .score{
+    font-size: 1.5rem;
+}
+
+.play-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    text-align: center;
+    margin : 1rem 0;
+}
+
+.emoji{
+
+    font-size: 10rem;
+    --size: 13rem;
+    width: var(--size);
+    height: var(--size);
+    border: 2px dashed black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.computer-area-title{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+.player-area-title{
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+.announcement-board-title{
+    margin: 2rem auto;
+    padding: 2rem 1rem;
+    background-color: #f2c244;
+    width: 100%;
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
