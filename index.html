@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Rock Paper Scissors</title>
+    <link rel="shortcut icon" href="./assets/game-console icon.png" type="image/x-icon">
 </head>
 <body>
     <div class="container">
         <div class="main-area">
             <div class="game-heading">
                 <p class="copyright">
-                    &copy; 2020 
+                    &copy; 2024
                     <a href="https://github.com/kingjames500" target="_blank">James Maina</a>
                 </p>
                 <p class="score" id="score-board">computer 0  0 player
@@ -20,7 +21,7 @@
             </div>
             <div class="play-area" id="computer-box">
                 <p class="computer-area-title">computer</p>
-                <p class="emoji" id="computer-choice-emoji">✌️</p>
+                <p class="emoji" id="computer-choice-emoji"></p>
             </div>
 
             <p class="announcement-board-title" id="announcement-board">
@@ -29,13 +30,27 @@
 
             <div class="play-area" id="player-box">
                 <p class="player-area-title">player</p>
-                <p class="emoji" id="player-choice-emoji">✌️</p>
+                <p class="emoji" id="player-choice-emoji"></p>
             </div>
-
-            <div class="emoji-section">
-                <button class="emoji-btn" id="rock">✊</button>
-                <button class="emoji-btn" id="paper">🖐</button>
-                <button class="emoji-btn" id="scissors">✌️</button>
+            <div class="user-choices">
+                <button class="user-rock-btn" id="rock-btn">
+                    <p class="btn-emoji">✊</p>
+                    <p class="text-btn">
+                        rock
+                    </p>
+                </button>
+                <button class="user-paper-btn" id="paper-btn">
+                    <p class="btn-emoji">✋</p>
+                    <p class="text-btn">
+                        paper
+                    </p>
+                </button>
+                <button class="user-scissors-btn" id="scissors-btn">
+                    <p class="btn-emoji">✌</p>
+                    <p class="text-btn">
+                        scissors
+                    </p>
+                </button>
             </div>
         </div>
     </div>
