@@ -91,9 +91,31 @@ body{
 
 .user-choices{
     margin-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
-.
+.user-rock-btn, 
+.user-scissors-btn,
+.user-paper-btn{
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    width: 20%;
+}
 
+.btn-emoji{
+    margin-bottom: 1rem;
+    font-size: 5rem;
+}
+
+.text-btn{
+    font-family: "Press Start 2P", sans-serif;
+    text-transform: capitalize;
+    text-align: center;
+}
 
 
