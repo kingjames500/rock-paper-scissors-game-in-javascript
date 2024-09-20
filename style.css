@@ -22,7 +22,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    width: 50vw;
+    width: 55vw;
     margin: 0 auto;
     position: relative;
 }
@@ -48,14 +48,6 @@ body{
     font-size: 1.5rem;
 }
 
-@media screen and (max-width: 28.125em) {
-    .gaming-header {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem
-    }
-}
 
 .play-area{
     display: flex;
@@ -130,25 +122,5 @@ body{
     font-family: "Press Start 2P", sans-serif;
     text-transform: capitalize;
     text-align: center;
-}
-
-@media screen and (max-width: 56.25em) {
-    .container {
-        width: 100vw
-    }
-}
-
-@media screen and (max-width: 28.125em) {
-    html {
-        font-size: 50%
-    }
-}
-
-@media screen and (max-width: 21.875em) {
-    .user-choices {
-        display: flex;
-        flex-direction: column;
-        gap: 10rem
-    }
 }
 
