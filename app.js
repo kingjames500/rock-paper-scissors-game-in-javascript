@@ -18,10 +18,10 @@ let userScore = 0;
 let computerScore = 0;
 
 function updateScoreBoard(winner){
-    if(winner === "Player win"){
+    if(winner === "player win"){
         userScore++;
     }
-    else if(winner === "Computer win"){
+    else if(winner === "computer win"){
         computerScore++;
     }
     scoreBoard.textContent = `computer ${computerScore}  ${userScore} player`;
@@ -32,6 +32,7 @@ function updateScoreBoard(winner){
 function getComputerChoice() {
   const choices = ["rock", "paper", "scissors"];
   const randomChoice = choices[Math.floor(Math.random() * choices.length)];
+  
   if (randomChoice === "rock") {
     computerChoiceEmoji.textContent = "✊";
   } else if (randomChoice === "paper") {
@@ -57,11 +58,11 @@ function playingGame(playerChoice){
         (playerChoice === "paper" && computerChoice === "rock") ||
         (playerChoice === "scissors" && computerChoice === "paper")){
         winnerAnnouncementBoard.textContent = "Player win";
-        updateScoreBoard("Player");
+        updateScoreBoard("player win");
     }
     else{
         winnerAnnouncementBoard.textContent = "Computer win";
-        updateScoreBoard("Computer");
+        updateScoreBoard("computer win");
     }
 }
 

@@ -40,6 +40,7 @@ body{
     width: 100%;
     top: 0;
     left: 0;
+    /* border: 2px solid blue */
 }
 
 .copyright, .score{
@@ -73,6 +74,8 @@ body{
 .computer-area-title{
     font-size: 1.5rem;
     text-transform: capitalize;
+    margin-top: 1.5rem;
+    /* border: 2px solid red */
 }
 
 .player-area-title{
@@ -90,8 +93,9 @@ body{
 }
 
 .user-choices{
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     display: flex;
+    /* border: 2px solid black; */
     justify-content: space-evenly;
     width: 100%;
 }
