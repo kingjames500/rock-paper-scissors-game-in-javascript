@@ -122,111 +122,52 @@ body {
   font-size: 2rem;
 }
 
-/* media query from ai */
-/* Small devices (max-width: 320px or 20em) */
-@media only screen and (max-width: 20em) {
+@media screen and (max-width: 66.25em) {
+  .container {
+    width: 80vw;
+  }
+
+  #scissors-btn {
+    font-size: 1.5rem;
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 45em) {
   .container {
     width: 90vw;
   }
-
-  .emoji {
-    font-size: 7rem;
-    --size: 9rem;
-  }
-
-  .announcement-board-title {
-    font-size: 1.2rem;
-  }
-
-  .user-rock-btn,
-  .user-scissors-btn,
-  .user-paper-btn {
-    width: 30%;
-    padding: 0.8rem 1.5rem;
-  }
-
-  .text-btn {
-    font-size: 1.2rem;
-  }
 }
 
-/* Medium devices (min-width: 768px or 48em) */
-@media only screen and (min-width: 48em) {
+@media screen and (max-width: 40.625em) {
   .container {
-    width: 70vw;
+    width: 100vw;
   }
 
-  .emoji {
-    font-size: 8rem;
-    --size: 11rem;
+  .game-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
   }
 
-  .announcement-board-title {
-    font-size: 1.6rem;
-  }
-
-  .user-rock-btn,
-  .user-scissors-btn,
-  .user-paper-btn {
-    width: 25%;
-    padding: 1.2rem 2rem;
+  .btn-emoji {
+    font-size: 4rem;
   }
 
   .text-btn {
-    font-size: 1.4rem;
-  }
-}
-
-/* Large devices (min-width: 1024px or 64em) */
-@media only screen and (min-width: 64em) {
-  .container {
-    width: 55vw;
+    font-size: 1.5rem;
   }
 
-  .emoji {
-    font-size: 10rem;
-    --size: 13rem;
-  }
-
-  .announcement-board-title {
-    font-size: 1.8rem;
-  }
-
-  .user-rock-btn,
-  .user-scissors-btn,
-  .user-paper-btn {
-    width: 20%;
-    padding: 1rem 2rem;
-  }
-
-  .text-btn {
-    font-size: 1.6rem;
-  }
-}
-
-/* Extra-large devices (min-width: 1440px or 90em) */
-@media only screen and (min-width: 90em) {
-  .container {
-    width: 45vw;
-  }
-
-  .emoji {
-    font-size: 12rem;
-    --size: 15rem;
-  }
-
-  .announcement-board-title {
-    font-size: 2rem;
-  }
-
-  .user-rock-btn,
-  .user-scissors-btn,
-  .user-paper-btn {
-    width: 18%;
-    padding: 1.2rem 2.5rem;
-  }
-
-  .text-btn {
-    font-size: 1.8rem;
+  @media screen and (max-width: 24.375em) {
+    .user-choices {
+      display: flex;
+      justify-content: space-around;
+      gap: 1rem;
+    }
+    .user-rock-btn,
+    .user-scissors-btn,
+    .user-paper-btn {
+      margin-left: 1rem;
+    }
   }
 }

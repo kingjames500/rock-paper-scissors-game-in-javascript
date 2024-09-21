@@ -53,11 +53,13 @@ function computerSelection() {
   return computerChoice;
 }
 
+// const computerChoice = computerSelection();
 console.log(computerSelection());
 
 // function to get computer choice
 function getComputerChoice() {
   //getting the random choice from the computerSelection function
+  // const randomChoice = computerChoice;
   const randomChoice = computerSelection();
 
   if (randomChoice === "rock") {
@@ -70,11 +72,14 @@ function getComputerChoice() {
   return randomChoice;
 }
 
+console.log(getComputerChoice());
+
 // function to play the game
 function playingGame(playerChoice) {
-  const computerChoice = getComputerChoice();
+  let computerChoice = getComputerChoice();
 
-  userChoiceEmoji.textContent = playerChoice === "rock" ? "✊" : playerChoice === "paper" ? "✋" : "✌️";
+  userChoiceEmoji.textContent =
+    playerChoice === "rock" ? "✊" : playerChoice === "paper" ? "✋" : "✌️";
 
   if (playerChoice === computerChoice) {
     winnerAnnouncementBoard.textContent = "It's a draw";
