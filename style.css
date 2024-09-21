@@ -124,8 +124,7 @@ body {
 
 /* responsiveness for my devices width (laptop) */
 
-@media  screen and (max-width: 93.0625em) {
-
+@media screen and (max-width: 93.0625em) {
   .container {
     width: 70vw;
   }
@@ -146,12 +145,10 @@ body {
   }
 }
 
-
 @media screen and (max-width: 45.6875em) {
   .container {
     width: 90vw;
   }
-  
 }
 
 @media screen and (max-width: 40.625em) {
@@ -174,34 +171,34 @@ body {
   }
 
   /* media queries for the scissors button */
-  @media screen and (max-width: 36.25em){
+  @media screen and (max-width: 36.25em) {
     #scissor-text-btn {
       font-size: 1.8rem;
     }
   }
 
-    @media screen and (max-width: 33.3125em){
-      .user-choices{
-        display: flex;
-        flex-direction: row;
-        gap: 1rem;
-        border: 2px solid red;
-        justify-content: space-evenly;
-      }
-      .user-rock-btn,
-      .user-paper-btn {
-        margin-left: 1rem;
-        width: 29%;
-      }
+  @media screen and (max-width: 33.3125em) {
+    .user-choices {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      border: 2px solid red;
+      justify-content: space-evenly;
+    }
+    .user-rock-btn,
+    .user-paper-btn {
+      margin-left: 1rem;
+      width: 29%;
+    }
 
-      .btn-emoji{
-        font-size: 6rem;
-      }
+    .btn-emoji {
+      font-size: 6rem;
+    }
 
-      .text-btn,
-      #scissor-text-btn{
-        font-size: 1.5rem;
-      }
+    .text-btn,
+    #scissor-text-btn {
+      font-size: 1.5rem;
+    }
   }
 
   @media screen and (max-width: 24.375em) {

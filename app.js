@@ -15,18 +15,13 @@ const winnerAnnouncementBoard = document.getElementById(
 // declaring the scoreboard
 const scoreBoard = document.getElementById("score-board");
 
-//declaring the user and computer score
+//declaring the user and computer score and Draw score
 let userScore = 0;
 let computerScore = 0;
+let drawScore = 0;
 
-function updateScoreBoard(winner) {
-  if (winner === "player win") {
-    userScore++;
-  } else if (winner === "computer win") {
-    computerScore++;
-  }
-  scoreBoard.textContent = `computer ${computerScore}  ${userScore} player`;
-}
+//storing the generated choices in a variable
+const computerChoice = computerSelection();
 
 function computerSelection() {
   const choices = ["rock", "paper", "scissors"];
@@ -35,7 +30,6 @@ function computerSelection() {
   for (let i = 0; i < 11; i++) {
     expandedChoices.push(choices[i % choices.length]);
   }
-
   //Function to shuffle the array
   function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -48,19 +42,17 @@ function computerSelection() {
   const shuffledChoices = shuffleArray(expandedChoices);
 
   //return the shuffled choices
-  const computerChoice =
-    shuffledChoices[Math.floor(Math.random() * shuffledChoices.length)];
-  return computerChoice;
+  // const computerChoice =
+  // shuffledChoices[Math.floor(Math.random() * shuffledChoices.length)];
+  return shuffledChoices;
 }
-
-// const computerChoice = computerSelection();
-console.log(computerSelection());
 
 // function to get computer choice
 function getComputerChoice() {
   //getting the random choice from the computerSelection function
-  // const randomChoice = computerChoice;
-  const randomChoice = computerSelection();
+  const choiceSelection = computerChoice;
+  const randomChoice =
+    choiceSelection[Math.floor(Math.random() * choiceSelection.length)];
 
   if (randomChoice === "rock") {
     computerChoiceEmoji.textContent = "✊";
@@ -72,8 +64,6 @@ function getComputerChoice() {
   return randomChoice;
 }
 
-console.log(getComputerChoice());
-
 // function to play the game
 function playingGame(playerChoice) {
   let computerChoice = getComputerChoice();
@@ -83,6 +73,7 @@ function playingGame(playerChoice) {
 
   if (playerChoice === computerChoice) {
     winnerAnnouncementBoard.textContent = "It's a draw";
+    // updateScoreBoard("draw");
   } else if (
     (playerChoice === "rock" && computerChoice === "scissors") ||
     (playerChoice === "paper" && computerChoice === "rock") ||
@@ -94,6 +85,18 @@ function playingGame(playerChoice) {
     winnerAnnouncementBoard.textContent = "Computer win";
     updateScoreBoard("computer win");
   }
+}
+
+// function to update the scoreboard
+function updateScoreBoard(winner) {
+  if (winner === "player win") {
+    userScore++;
+  } else if (winner === "computer win") {
+    computerScore++;
+  } // else {
+  //   drawScore++;
+  // }
+  scoreBoard.textContent = `computer ${computerScore}  ${userScore} player`;
 }
 
 //event listeners
