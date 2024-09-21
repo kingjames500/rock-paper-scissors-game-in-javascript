@@ -31,7 +31,27 @@ function updateScoreBoard(winner){
 // function to get computer choice
 function getComputerChoice() {
   const choices = ["rock", "paper", "scissors"];
-  const randomChoice = choices[Math.floor(Math.random() * choices.length)];
+  let expandedChoices = [];
+
+  for (let i = 0; i < 11; i++) {
+    expandedChoices.push(choices[i % choices.length]);
+  }
+
+  //Function to shuffle the array
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
+
+// Shuffle the expanded choices
+const shuffledChoices = shuffleArray(expandedChoices);
+
+//get a random choice from the shuffled choices
+const randomChoice = shuffledChoices[Math.floor(Math.random() * shuffledChoices.length)];
+  // const randomChoice = choices[Math.floor(Math.random() * choices.length)];
   
   if (randomChoice === "rock") {
     computerChoiceEmoji.textContent = "✊";
