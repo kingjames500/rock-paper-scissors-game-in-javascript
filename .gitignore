@@ -1,6 +1,8 @@
 # Ignore node_modules directory
 node_modules/
 
+.github/
+
 # Ignore package-lock.json
 package-lock.json
 
@@ -10,3 +12,4 @@ package.json
 # Ignore Prettier configuration files
 .prettierignore
 .prettierrc
+
