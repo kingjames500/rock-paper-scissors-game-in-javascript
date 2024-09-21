@@ -74,8 +74,7 @@ function getComputerChoice() {
 function playingGame(playerChoice) {
   const computerChoice = getComputerChoice();
 
-  userChoiceEmoji.textContent =
-    playerChoice === "rock" ? "✊" : playerChoice === "paper" ? "✋" : "✌️";
+  userChoiceEmoji.textContent = playerChoice === "rock" ? "✊" : playerChoice === "paper" ? "✋" : "✌️";
 
   if (playerChoice === computerChoice) {
     winnerAnnouncementBoard.textContent = "It's a draw";
