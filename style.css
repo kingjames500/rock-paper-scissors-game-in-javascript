@@ -1,234 +1,232 @@
 @import "https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap";
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
 
-body{
-    font-family: sans-serif;
-    font-size: 1.6rem;
-    font-family: "Press Start 2P", sans-serif;
+body {
+  font-family: sans-serif;
+  font-size: 1.6rem;
+  font-family: "Press Start 2P", sans-serif;
 }
 
-.container{
-    background-color: #9ec81f;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    width: 55vw;
-    margin: 0 auto;
-    position: relative;
+.container {
+  background-color: #9ec81f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 55vw;
+  margin: 0 auto;
+  position: relative;
 }
 
-.main-area{
-    width: 100%;
+.main-area {
+  width: 100%;
 }
 
-.game-heading{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    padding: 1rem;
-    width: 100%;
-    top: 0;
-    left: 0;
-    /* border: 2px solid blue */
+.game-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  padding: 1rem;
+  width: 100%;
+  top: 0;
+  left: 0;
+  /* border: 2px solid blue */
 }
 
-
-.copyright, .score{
-    font-size: 1.5rem;
+.copyright,
+.score {
+  font-size: 1.5rem;
 }
 
-
-.play-area{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10rem;
-    text-align: center;
-    margin : 1rem 0;
+.play-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+  text-align: center;
+  margin: 1rem 0;
 }
 
-.emoji{
-
-    font-size: 10rem;
-    --size: 13rem;
-    width: var(--size);
-    height: var(--size);
-    border: 2px dashed black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 1rem;
+.emoji {
+  font-size: 10rem;
+  --size: 13rem;
+  width: var(--size);
+  height: var(--size);
+  border: 2px dashed black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1rem;
 }
 
-.computer-area-title{
-    font-size: 1.5rem;
-    text-transform: capitalize;
-    margin-top: 1.5rem;
-    /* border: 2px solid red */
+.computer-area-title {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  margin-top: 1.5rem;
+  /* border: 2px solid red */
 }
 
-.player-area-title{
-    font-size: 2rem;
-    text-transform: capitalize;
+.player-area-title {
+  font-size: 2rem;
+  text-transform: capitalize;
 }
-.announcement-board-title{
-    margin: 2rem auto;
-    padding: 2rem 1rem;
-    background-color: #f2c244;
-    width: 100%;
-    text-align: center;
-    font-size: 1.8rem;
-    text-transform: uppercase;
-}
-
-.user-choices{
-    margin-top: 1.5rem;
-    display: flex;
-    /* border: 2px solid black; */
-    justify-content: space-evenly;
-    width: 100%;
+.announcement-board-title {
+  margin: 2rem auto;
+  padding: 2rem 1rem;
+  background-color: #f2c244;
+  width: 100%;
+  text-align: center;
+  font-size: 1.8rem;
+  text-transform: uppercase;
 }
 
-.user-rock-btn, 
+.user-choices {
+  margin-top: 1.5rem;
+  display: flex;
+  /* border: 2px solid black; */
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.user-rock-btn,
 .user-scissors-btn,
-.user-paper-btn{
-    outline: none;
-    border: none;
-    border-radius: 5px;
-    padding: 1rem 2rem;
-    cursor: pointer;
-    width: 20%;
+.user-paper-btn {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  width: 20%;
 }
 
-.btn-emoji{
-    margin-bottom: 1rem;
-    font-size: 5rem;
+.btn-emoji {
+  margin-bottom: 1rem;
+  font-size: 5rem;
 }
 
-.text-btn{
-    font-family: "Press Start 2P", sans-serif;
-    text-transform: capitalize;
-    text-align: center;
+.text-btn {
+  font-family: "Press Start 2P", sans-serif;
+  text-transform: capitalize;
+  text-align: center;
 }
 
 /* media query from ai */
 /* Small devices (max-width: 320px or 20em) */
 @media only screen and (max-width: 20em) {
-    .container {
-        width: 90vw;
-    }
+  .container {
+    width: 90vw;
+  }
 
-    .emoji {
-        font-size: 7rem;
-        --size: 9rem;
-    }
+  .emoji {
+    font-size: 7rem;
+    --size: 9rem;
+  }
 
-    .announcement-board-title {
-        font-size: 1.2rem;
-    }
+  .announcement-board-title {
+    font-size: 1.2rem;
+  }
 
-    .user-rock-btn, 
-    .user-scissors-btn, 
-    .user-paper-btn {
-        width: 30%;
-        padding: 0.8rem 1.5rem;
-    }
-    
-    .text-btn {
-        font-size: 1.2rem;
-    }
+  .user-rock-btn,
+  .user-scissors-btn,
+  .user-paper-btn {
+    width: 30%;
+    padding: 0.8rem 1.5rem;
+  }
+
+  .text-btn {
+    font-size: 1.2rem;
+  }
 }
 
 /* Medium devices (min-width: 768px or 48em) */
 @media only screen and (min-width: 48em) {
-    .container {
-        width: 70vw;
-    }
+  .container {
+    width: 70vw;
+  }
 
-    .emoji {
-        font-size: 8rem;
-        --size: 11rem;
-    }
+  .emoji {
+    font-size: 8rem;
+    --size: 11rem;
+  }
 
-    .announcement-board-title {
-        font-size: 1.6rem;
-    }
+  .announcement-board-title {
+    font-size: 1.6rem;
+  }
 
-    .user-rock-btn, 
-    .user-scissors-btn, 
-    .user-paper-btn {
-        width: 25%;
-        padding: 1.2rem 2rem;
-    }
-    
-    .text-btn {
-        font-size: 1.4rem;
-    }
+  .user-rock-btn,
+  .user-scissors-btn,
+  .user-paper-btn {
+    width: 25%;
+    padding: 1.2rem 2rem;
+  }
+
+  .text-btn {
+    font-size: 1.4rem;
+  }
 }
 
 /* Large devices (min-width: 1024px or 64em) */
 @media only screen and (min-width: 64em) {
-    .container {
-        width: 55vw;
-    }
+  .container {
+    width: 55vw;
+  }
 
-    .emoji {
-        font-size: 10rem;
-        --size: 13rem;
-    }
+  .emoji {
+    font-size: 10rem;
+    --size: 13rem;
+  }
 
-    .announcement-board-title {
-        font-size: 1.8rem;
-    }
+  .announcement-board-title {
+    font-size: 1.8rem;
+  }
 
-    .user-rock-btn, 
-    .user-scissors-btn, 
-    .user-paper-btn {
-        width: 20%;
-        padding: 1rem 2rem;
-    }
-    
-    .text-btn {
-        font-size: 1.6rem;
-    }
+  .user-rock-btn,
+  .user-scissors-btn,
+  .user-paper-btn {
+    width: 20%;
+    padding: 1rem 2rem;
+  }
+
+  .text-btn {
+    font-size: 1.6rem;
+  }
 }
 
 /* Extra-large devices (min-width: 1440px or 90em) */
 @media only screen and (min-width: 90em) {
-    .container {
-        width: 45vw;
-    }
+  .container {
+    width: 45vw;
+  }
 
-    .emoji {
-        font-size: 12rem;
-        --size: 15rem;
-    }
+  .emoji {
+    font-size: 12rem;
+    --size: 15rem;
+  }
 
-    .announcement-board-title {
-        font-size: 2rem;
-    }
+  .announcement-board-title {
+    font-size: 2rem;
+  }
 
-    .user-rock-btn, 
-    .user-scissors-btn, 
-    .user-paper-btn {
-        width: 18%;
-        padding: 1.2rem 2.5rem;
-    }
-    
-    .text-btn {
-        font-size: 1.8rem;
-    }
+  .user-rock-btn,
+  .user-scissors-btn,
+  .user-paper-btn {
+    width: 18%;
+    padding: 1.2rem 2.5rem;
+  }
+
+  .text-btn {
+    font-size: 1.8rem;
+  }
 }
