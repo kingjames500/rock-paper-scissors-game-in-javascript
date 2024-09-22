@@ -189,7 +189,7 @@ body {
 /* 533px */
 @media screen and (max-width: 33.3125em) {
   .container {
-    width: 95vw;
+    width: 100vw;
   }
 
   .game-heading {
