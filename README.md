@@ -1,4 +1,4 @@
-# Rock Paper Scissors Game
+# Rock Paper Scissors Game In Javascript.
 
 ## Table of Contents
 1. [Introduction](#introduction)
@@ -19,6 +19,8 @@ Welcome to the Rock Paper Scissors game! This is a simple yet fun game that you 
 1. Choose either Rock, Paper, or Scissors.
 2. The opponent (or computer) will also choose one of the three options.
 3. Compare the choices to determine the winner based on the rules.
+4. If the player have won, then player scoreboard will be increase score by 1; and the computer score will remain as it was.
+5. If both the player picks similar choices then the results will be a draw and the scoreboard will remain intact.
 
 ## Scoring
 - Win: 1 point
