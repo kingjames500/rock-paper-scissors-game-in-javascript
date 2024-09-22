@@ -45,7 +45,7 @@ body {
 
 .copyright,
 .score {
-  font-size: 1.455rem;
+  font-size: 1.6rem;
 }
 
 .play-area {
@@ -116,62 +116,92 @@ body {
   font-size: 5rem;
 }
 
-.text-btn, .text-btn-scissor{
+.text-btn,
+.text-btn-scissor {
   font-family: "Press Start 2P", sans-serif;
   text-transform: capitalize;
   font-size: 1.3rem;
 }
 
-/* responsiveness for my devices width (laptop) */
-
+/* 1489px */
 @media screen and (max-width: 93.0625em) {
   .container {
-    width: 45vw;
+    width: 50vw;
   }
-  #scissors-btn {
-    font-size: 1.5rem;
-    /* width: 33%; */
+
+  .copyright,
+  .score {
+    font-size: 1.3rem;
   }
 }
 
-@media screen and (max-width: 69.5em){
-  .container{
+/* 1112px */
+@media screen and (max-width: 69.5em) {
+  .container {
     width: 60vw;
   }
 }
-.user-choices #scissors-btn {
-  font-size: 0.8rem;
-  width: 23%;
-}
-#scissor-text-btn{
-  font-size: 1.5rem;
-  font-weight: bold;
-}
 
+/* 1060px */
 @media screen and (max-width: 66.25em) {
   .container {
     width: 65vw;
   }
-
-  #scissors-btn {
-    font-size: 1.5rem;
-    /* width: 30%; */
-  }
 }
 
-@media screen and (max-width: 45.6875em) {
-  .container {
-    width: 90vw;
-  }
-}
-
-@media  screen and (max-width: 55em) {
+/* 880px */
+@media screen and (max-width: 55em) {
   .container {
     width: 70vw;
   }
+
+  .copyright,
+  .score {
+    font-size: 1.3rem;
+  }
 }
 
+/* 731px */
+@media screen and (max-width: 45.6875em) {
+  .container {
+    width: 80vw;
+  }
+  .copyright,
+  .score {
+    font-size: 1.3rem;
+  }
+}
+
+/* 650px */
 @media screen and (max-width: 40.625em) {
+  .container {
+    width: 90vw;
+  }
+
+  .game-heading {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
+/* 533px */
+@media screen and (max-width: 33.3125em) {
+  .container {
+    width: 95vw;
+  }
+
+  .game-heading {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
+/* 405px */
+@media screen and (max-width: 25.3125em) {
   .container {
     width: 100vw;
   }
@@ -179,68 +209,20 @@ body {
   .game-heading {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
+  }
+
+  .user-choices {
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.5rem; /* Small gap between buttons */
   }
 
   .btn-emoji {
-    font-size: 4rem;
+    font-size: 4.5rem; /* Slightly smaller emoji size for better fit */
   }
-
-  .text-btn {
-    font-size: 2rem;
+  .text-btn,
+  #scissor-text-btn {
+    font-size: 0.9rem; /* Smaller text size for better fit */
   }
-
-  /* media queries for the scissors button */
-  @media screen and (max-width: 36.25em) {
-    #scissor-text-btn {
-      font-size: 1.8rem;
-    }
-  }
-
-  @media screen and (max-width: 33.3125em) {
-    .user-choices {
-      display: flex;
-      flex-direction: row;
-      gap: 1rem;
-      /* border: 2px solid red; */
-      justify-content: space-evenly;
-    }
-    .user-rock-btn,
-    .user-paper-btn {
-      margin-left: 1rem;
-      /* width: 29%; */
-    }
-
-    .btn-emoji {
-      font-size: 6rem;
-    }
-
-    .text-btn,
-    #scissor-text-btn {
-      font-size: 1.5rem;
-    }
-  }
-  @media screen and (max-width: 25.3125em) {
-    .game-heading{
-      text-align: center;
-    }
-
-    #score-board,
-    .copyright{
-      font-size: 1.2rem;
-    }
-    .user-choices {
-      flex-direction: column;
-      align-items: center;
-      gap: 1rem;
-    }
-
-    .user-rock-btn,
-    .user-paper-btn,
-  #scissors-btn {
-      width: 50%;
-      margin: 0.5rem 0;
-    }
-  }
- 
 }
