@@ -218,6 +218,7 @@ body {
     gap: 0.5rem; /* Small gap between buttons */
   }
 
+  /* .user-rock-btn, */
   .btn-emoji {
     font-size: 4.5rem; /* Slightly smaller emoji size for better fit */
   }
